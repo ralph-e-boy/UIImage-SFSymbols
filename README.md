@@ -4,7 +4,7 @@
 ### Extension / Category on UIImage to use SFSymbols with autocomplete 
 
 
-nstead of;
+instead of;
 
 
        let image = UIImage(systemName: "multiply.circle.fill")
