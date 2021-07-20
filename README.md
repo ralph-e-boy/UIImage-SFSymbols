@@ -18,7 +18,7 @@ use:
 
 ### Installation - Swift Package Manager
 
-       .Package(url: "https://github.com/ralph-e-boy/UIImage-SFSymbols", branch: "main")
+       .package(url: "https://github.com/ralph-e-boy/UIImage-SFSymbols", branch: "main")
 
 
 This was generated using the shell script in bin/ against the plist found in the SFSymbols App version 2.1
