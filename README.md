@@ -21,8 +21,15 @@ use:
        .package(url: "https://github.com/ralph-e-boy/UIImage-SFSymbols", branch: "main")
 
 
-This was generated using the shell script in bin/ against the plist found in the SFSymbols App version 2.1
+### Versions / tags 
 
-Adjust format  as you see fit, and regenerate the swift by typing "make" from the root directory 
+Version 2.0.0 of this library was built against SFSymbols 2.1 
+
+Version 3.0.0 of this library was built against SFSymbols 3.0 
+
+
+The source is is generated using the shell script in bin/ against the plist found in the SFSymbols App
+
+Adjust format as you see fit, and regenerate the swift by typing "make" from the root directory 
 
 
