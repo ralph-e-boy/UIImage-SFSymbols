@@ -3,6 +3,8 @@
 # UIImage+SFSymbols 
 # Generate an extension on UIImage for SFSymbols 
 
+# this program requires jq https://github.com/stedolan/jq
+
 # instead of;
 # let image = UIImage(systemName: "multiply.circle.fill")
 # 
@@ -12,8 +14,6 @@
 # let imageView = UIImageView(image: .multiply_circle_fill) 
 
 # This program requires https://stedolan.github.io/jq/
-
-set -eiu
 
 PLIST_PATH="/Applications/SF Symbols.app/Contents/Resources/name_availability.plist"
 
