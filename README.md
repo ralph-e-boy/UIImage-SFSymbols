@@ -1,5 +1,5 @@
 
-## UIImage-SFSymbols (version 2.1 )
+## UIImage-SFSymbols (version 2.1 / 3)
 
 ### Extension / Category on UIImage for SFSymbols
 
