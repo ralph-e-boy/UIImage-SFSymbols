@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set eiu
+
 # UIImage+SFSymbols 
 # Generate an extension on UIImage for SFSymbols 
 
@@ -15,12 +17,14 @@
 
 # This program requires https://stedolan.github.io/jq/
 
-PLIST_PATH="/Applications/SF Symbols.app/Contents/Resources/name_availability.plist"
+PLIST="name_availability.plist"
+PLIST_PATH="/Applications/SF Symbols.app/Contents/Resources/Metadata/"$PLIST
 
 if [[ -f "$PLIST_PATH" ]] ; then
 # 
 # Create a String enum to hold the system names of each SFSymbol
 # so they can be called with dot syntax where a String is required
+cp "$PLIST_PATH" .
 
 
 echo 
@@ -36,7 +40,7 @@ echo    '/// i.e. - .sf_app_badge_fill() -> "app.badge.fill"'
 echo "  func callAsFunction() -> String { rawValue }"
 echo 
 
-for i in  `plutil -extract symbols json "/Applications/SF Symbols.app/Contents/Resources/name_availability.plist"  -o output.json  &&  jq -r 'keys | .[] ' < output.json  ` ; 
+for i in  `plutil -extract symbols json $PLIST  -o output.json  &&  jq -r 'keys | .[] ' < output.json  ` ; 
 do 
    VAL=$i
    TRANSFORMED=$(echo $i  | sed 's/\./_/g')
