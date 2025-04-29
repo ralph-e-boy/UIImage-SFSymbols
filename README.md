@@ -1,5 +1,5 @@
 
-## UIImage-SFSymbols (version 2.1 / 3)
+## UIImage-SFSymbols (version 2.1 / 3 / 6)
 
 ### Extension / Category on UIImage for SFSymbols
 
@@ -27,8 +27,11 @@ Version 2.0.0 of this library was built against SFSymbols 2.1
 
 Version 3.0.0 of this library was built against SFSymbols 3.0 
 
+Version 4.0.0 of this library was built against SFSymbols 6.0
 
-The source is is generated using the shell script in bin/ against the plist found in the SFSymbols App
+
+The source is generated using the shell script in bin/ against the plist found in the SFSymbols App.
+
 
 Adjust format as you see fit, and regenerate the swift by typing "make" from the root directory 
 
